@@ -1,0 +1,33 @@
+<div class="org-grid">
+    <div class="card">
+        <img src="https://www.un.org/sites/un2.un.org/files/un_logo_blue_large.png" alt="UN Logo">
+        <h3>الأمم المتحدة | United Nations</h3>
+        <p>AR: الحفاظ على السلام والأمن الدوليين.<br>
+           EN: Maintaining international peace and security.</p>
+        <a href="https://www.un.org/" class="btn" target="_blank">Visit Website</a>
+    </div>
+
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/WHO_logo.svg/1024px-WHO_logo.svg.png" alt="WHO Logo">
+        <h3>منظمة الصحة العالمية | WHO</h3>
+        <p>AR: السلطة التوجيهية للصحة العالمية.<br>
+           EN: The directing and coordinating authority for global health.</p>
+        <a href="https://www.who.int/" class="btn" target="_blank">Visit Website</a>
+    </div>
+
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/UNESCO_logo_vertical.svg/800px-UNESCO_logo_vertical.svg.png" alt="UNESCO Logo">
+        <h3>اليونسكو | UNESCO</h3>
+        <p>AR: تعزيز التعاون الدولي في التعليم والعلوم.<br>
+           EN: Promoting international collaboration through education and science.</p>
+        <a href="https://www.unesco.org/" class="btn" target="_blank">Visit Website</a>
+    </div>
+
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/UNICEF_Logo.svg/1024px-UNICEF_Logo.svg.png" alt="UNICEF Logo">
+        <h3>اليونيسف | UNICEF</h3>
+        <p>AR: حماية حقوق الأطفال في كل مكان.<br>
+           EN: Protecting the rights of every child everywhere.</p>
+        <a href="https://www.unicef.org/" class="btn" target="_blank">Visit Website</a>
+    </div>
+</div>
