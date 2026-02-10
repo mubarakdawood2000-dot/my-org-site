@@ -1,0 +1,23 @@
+// وظيفة البحث المتقدمة
+function searchOrganizations() {
+    // الحصول على النص المكتوب في حقل البحث وتحويله لحروف صغيرة
+    let input = document.getElementById('searchBar').value.toLowerCase();
+    // الحصول على جميع بطاقات المنظمات
+    let cards = document.getElementsByClassName('card');
+
+    for (let i = 0; i < cards.length; i++) {
+        // البحث داخل العنوان والوصف (يشمل العربي والإنجليزي)
+        let content = cards[i].innerText.toLowerCase();
+        
+        // إذا كان النص المكتوب موجوداً في محتوى البطاقة، تظهر البطاقة
+        if (content.includes(input)) {
+            cards[i].style.display = "block";
+        } else {
+            // إذا لم يتطابق البحث، تختفي البطاقة
+            cards[i].style.display = "none";
+        }
+    }
+}
+
+// ربط ميزة البحث بحقل الإدخال ليعمل البحث أثناء الكتابة فوراً
+document.getElementById('searchBar').addEventListener('keyup', searchOrganizations);
