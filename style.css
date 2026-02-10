@@ -1,0 +1,119 @@
+/* تنسيقات عامة */
+:root {
+  --bg-color: #f4f7f6;
+  --text-color: #333;
+  --card-bg: #ffffff;
+  --header-bg: #2c3e50;
+  --primary-blue: #2980b9;
+}
+
+/* تنسيقات الوضع الليلي */
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #ecf0f1;
+  --card-bg: #2c2c2c;
+  --header-bg: #000000;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  transition: 0.3s;
+}
+
+/* زر تبديل الوضع */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 50px;
+  margin-left: 10px;
+}
+
+.theme-switch input { display:none; }
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 16px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 16px;
+  border-radius: 50%;
+}
+
+input:checked + .slider { background-color: var(--primary-blue); }
+input:checked + .slider:before { transform: translateX(26px); }
+
+/* شريط البحث */
+.search-container {
+  text-align: center;
+  padding: 20px;
+}
+
+#searchBar {
+  width: 60%;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+/* تنسيق البطاقات */
+.org-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover { transform: translateY(-10px); }
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}
