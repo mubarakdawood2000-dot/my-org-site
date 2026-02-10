@@ -154,3 +154,41 @@
 
 </body>
 </html>
+// ميزة تحويل الصور من أي صيغة إلى JPG
+const dropZone = document.getElementById('dropZone');
+
+dropZone.onclick = () => {
+    // إنشاء عنصر اختيار ملفات مخفي
+    const fileInput = document.createElement('input');
+    fileInput.type = 'file';
+    fileInput.accept = 'image/*';
+    
+    fileInput.onchange = (e) => {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                const img = new Image();
+                img.onload = () => {
+                    // إنشاء لوحة رسم لتحويل الصورة
+                    const canvas = document.createElement('canvas');
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0);
+                    
+                    // تحويل الصورة إلى صيغة JPG وتحميلها
+                    const dataUrl = canvas.toDataURL('image/jpeg');
+                    const link = document.createElement('a');
+                    link.download = 'MubaConvert-' + file.name.split('.')[0] + '.jpg';
+                    link.href = dataUrl;
+                    link.click();
+                };
+                img.src = event.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+    };
+    fileInput.click();
+};
+
