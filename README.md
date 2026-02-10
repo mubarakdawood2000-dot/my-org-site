@@ -13,7 +13,7 @@ An interactive web directory that showcases key international organizations, pro
 - **CSS3:** For styling, layout, and card-based design.
 - **JavaScript:** For interactive features like search and theme switching.
 
-## 📂 How to Run
+## 📂 How to Download 
 1. Download or clone the repository.
 2. Open the `index.html` file in any modern web browser.
 
