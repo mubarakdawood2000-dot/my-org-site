@@ -1,226 +1,136 @@
-<div class="org-grid">
-    <div class="card"><h3>الأمم المتحدة | United Nations</h3><p>السلام والأمن الدوليين.</p><a href="https://www.un.org/" class="btn">Visit</a></div>
-    <div class="card"><h3>منظمة الصحة العالمية | WHO</h3><p>الصحة العالمية للجميع.</p><a href="https://www.who.int/" class="btn">Visit</a></div>
-    <div class="card"><h3>اليونسكو | UNESCO</h3><p>التربية والعلم والثقافة.</p><a href="https://www.unesco.org/" class="btn">Visit</a></div>
-    <div class="card"><h3>اليونيسف | UNICEF</h3><p>حماية حقوق الأطفال.</p><a href="https://www.unicef.org/" class="btn">Visit</a></div>
-    <div class="card"><h3>البنك الدولي | World Bank</h3><p>التنمية ومكافحة الفقر.</p><a href="https://www.worldbank.org/" class="btn">Visit</a></div>
-    <div class="card"><h3>صندوق النقد الدولي | IMF</h3><p>الاستقرار المالي العالمي.</p><a href="https://www.imf.org/" class="btn">Visit</a></div>
-    <div class="card"><h3>منظمة التجارة العالمية | WTO</h3><p>تنظيم التجارة الدولية.</p><a href="https://www.wto.org/" class="btn">Visit</a></div>
-    <div class="card"><h3>منظمة العمل الدولية | ILO</h3><p>تعزيز العدالة الاجتماعية.</p><a href="https://www.ilo.org/" class="btn">Visit</a></div>
-    <div class="card"><h3>الفاو | FAO</h3><p>القضاء على الجوع بالعالم.</p><a href="https://www.fao.org/" class="btn">Visit</a></div>
-    <div class="card"><h3>مفوضية اللاجئين | UNHCR</h3><p>حماية حقوق اللاجئين.</p><a href="https://www.unhcr.org/" class="btn">Visit</a></div>
-
-    <div class="card"><h3>جامعة الدول العربية | Arab League</h3><p>تنسيق العمل العربي المشترك.</p><a href="http://www.lasportal.org/" class="btn">Visit</a></div>
-    <div class="card"><h3>مجلس التعاون الخليجي | GCC</h3><p>التعاون بين دول الخليج.</p><a href="https://www.gcc-sg.org/" class="btn">Visit</a></div>
-    <div class="card"><h3>الاتحاد الأوروبي | EU</h3><p>تكامل سياسي واقتصادي أوروبي.</p><a href="https://european-union.europa.eu/" class="btn">Visit</a></div>
-    <div class="card"><h3>أوبك | OPEC</h3><p>تنسيق سياسات الدول النفطية.</p><a href="https://www.opec.org/" class="btn">Visit</a></div>
-    <div class="card"><h3>منظمة التعاون الإسلامي | OIC</h3><p>الصوت الجماعي للعالم الإسلامي.</p><a href="https://www.oic-oci.org/" class="btn">Visit</a></div>
-    <div class="card"><h3>الناتو | NATO</h3><p>حلف شمال الأطلسي الدفاعي.</p><a href="https://www.nato.int/" class="btn">Visit</a></div>
-    <div class="card"><h3>الاتحاد الأفريقي | AU</h3><p>تحقيق الوحدة الأفريقية.</p><a href="https://au.int/" class="btn">Visit</a></div>
-    <div class="card"><h3>الإنتربول | INTERPOL</h3><p>التعاون الشرطي الدولي.</p><a href="https://www.interpol.int/" class="btn">Visit</a></div>
-    <div class="card"><h3>مجموعة العشرين | G20</h3><p>التعاون الاقتصادي العالمي.</p><a href="https://www.g20.org/" class="btn">Visit</a></div>
-    <div class="card"><h3>رابطة آسيان | ASEAN</h3><p>تعاون دول جنوب شرق آسيا.</p><a href="https://asean.org/" class="btn">Visit</a></div>
-
-    </div>
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>موسوعة المنظمات الدولية</title>
-    <link rel="stylesheet" href="./style.css">
-
-  </head>
-    
-  <body>
-  <div class="theme-switch-wrapper">
-
-  <label class="theme-switch" for="checkbox">
-
-    <input type="checkbox" id="checkbox" />
-
-    <div class="slider round"></div>
-
-  </label>
-
-  <span id="mode-text">الوضع الليلي</span>
-
-</div>
-
-<!DOCTYPE html>
-<div class="search-container">
-
-  <input type="text" id="searchBar" placeholder="🔍 ابحث عن منظمة (مثل: الصحة، اليونسكو، الأمم المتحدة...)" />
-
-</div>
-
 <html lang="ar" dir="rtl">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موسوعة المنظمات العالمية | Global Org Encyclopedia</title>
+    <style>
+        /* --- قسم التنسيق (CSS) --- */
+        :root {
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --card-bg: #ffffff;
+            --primary-blue: #2980b9;
+        }
 
-  <meta charset="UTF-8">
+        [data-theme="dark"] {
+            --bg-color: #1a1a1a;
+            --text-color: #ecf0f1;
+            --card-bg: #2c2c2c;
+            --primary-blue: #3498db;
+        }
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            transition: 0.3s;
+        }
 
-  <title>دليل المنظمات الدولية</title>
+        header {
+            text-align: center;
+            padding: 2rem;
+            background: var(--primary-blue);
+            color: white;
+        }
 
-  <style>
-    /* تنسيقات CSS أساسية */
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f7f6;
-      margin: 0;
-      padding: 0;
-    }
+        .search-container {
+            margin: 20px auto;
+            text-align: center;
+        }
 
-    header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+        #searchBar {
+            width: 80%;
+            max-width: 600px;
+            padding: 12px 20px;
+            border-radius: 25px;
+            border: 2px solid #ddd;
+            font-size: 16px;
+        }
 
-    .container {
-      width: 90%;
-      margin: auto;
-      overflow: hidden;
-      padding: 20px;
-    }
+        .org-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
 
-    /* نظام الشبكة للبطاقات */
-    .org-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
+        .card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
 
-    .card {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      text-align: center;
-      transition: transform 0.3s;
-    }
+        .card:hover { transform: translateY(-5px); }
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
+        .btn {
+            display: inline-block;
+            background: var(--primary-blue);
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
 
-    .card img {
-      width: 80px;
-      height: 80px;
-      margin-bottom: 15px;
-    }
-
-    .card h3 {
-      color: #2980b9;
-    }
-
-    .card p {
-      font-size: 0.9em;
-      color: #666;
-      line-height: 1.6;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 15px;
-      background-color: #2980b9;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #2c3e50;
-      color: white;
-      margin-top: 40px;
-    }
-  </style>
-
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            padding: 10px;
+            background: #eee;
+            border-radius: 50%;
+        }
+    </style>
 </head>
-
 <body>
 
-  <header>
+    <div class="theme-toggle" onclick="toggleTheme()">🌓</div>
 
-    <h1>موسوعة المنظمات الدولية</h1>
+    <header>
+        <h1>موسوعة المنظمات الدولية 🌍</h1>
+        <p>دليل تفاعلي للوصول السريع للمنظمات العالمية</p>
+    </header>
 
-    <p>بوابتك للتعرف على الهيئات العالمية</p>
-
-  </header>
-
-  <div class="container">
-
-    <div class="org-grid">
-
-      <div class="card">
-
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_the_United_Nations.svg" alt="UN Logo">
-
-        <h3>الأمم المتحدة (UN)</h3>
-
-        <p>منظمة عالمية تهدف للحفاظ على السلم والأمن الدوليين وتنمية العلاقات بين الدول.</p>
-
-        <a href="https://www.un.org/ar/" target="_blank" class="btn">زيارة الموقع</a>
-
-      </div>
-
-      <div class="card">
-
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/WHO_logo.svg" alt="WHO Logo">
-
-        <h3>منظمة الصحة العالمية</h3>
-
-        <p>السلطة التوجيهية والتنسيقية ضمن منظومة الأمم المتحدة فيما يخص المجال الصحي.</p>
-
-        <a href="https://www.who.int/ar" target="_blank" class="btn">زيارة الموقع</a>
-
-      </div>
-
-      <div class="card">
-
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/UNESCO_logo.svg" alt="UNESCO Logo">
-
-        <h3>اليونسكو (UNESCO)</h3>
-
-        <p>منظمة متخصصة تهدف لإحلال السلام من خلال التعاون في التربية والعلم والثقافة.</p>
-
-        <a href="https://www.unesco.org/ar" target="_blank" class="btn">زيارة الموقع</a>
-
-      </div>
-
-      <div class="card">
-
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/World_Trade_Organization_logo_text.svg" alt="WTO Logo">
-
-        <h3>منظمة التجارة العالمية</h3>
-
-        <p>المنظمة العالمية الوحيدة التي تعنى بالقوانين التجارية الدولية بين الدول.</p>
-
-        <a href="https://www.wto.org" target="_blank" class="btn">زيارة الموقع</a>
-
-      </div>
-
+    <div class="search-container">
+        <input type="text" id="searchBar" onkeyup="searchOrgs()" placeholder="ابحث عن اسم المنظمة (عربي/English)...">
     </div>
 
-  </div>
+    <div class="org-grid" id="orgGrid">
+        <div class="card">
+            <h3>الأمم المتحدة | United Nations</h3>
+            <p>الحفاظ على السلام والأمن الدوليين.</p>
+            <a href="https://www.un.org/" class="btn" target="_blank">الموقع الرسمي</a>
+        </div>
+        <div class="card">
+            <h3>منظمة الصحة العالمية | WHO</h3>
+            <p>تنسيق العمل الصحي العالمي.</p>
+            <a href="https://www.who.int/" class="btn" target="_blank">الموقع الرسمي</a>
+        </div>
+        </div>
 
-  <footer>
+    <script>
+        /* --- قسم البرمجة (JavaScript) --- */
+        function searchOrgs() {
+            let input = document.getElementById('searchBar').value.toLowerCase();
+            let cards = document.getElementsByClassName('card');
+            
+            for (let card of cards) {
+                let text = card.innerText.toLowerCase();
+                card.style.display = text.includes(input) ? "block" : "none";
+            }
+        }
 
-    <p>جميع الحقوق محفوظة &copy; 2026</p>
-
-  </footer>
-
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', targetTheme);
+        }
+    </script>
 </body>
-
-</html>
-    <script  src="./script.js"></script>
-
-  </body>
-  
 </html>
